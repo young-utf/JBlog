@@ -1,0 +1,18 @@
+<head>
+	<title>JBlog</title>
+</head>
+<body>
+	{{> main}}
+</body>
+
+
+<template name="main">
+  <div class="container">
+		{{> header}}
+    <div id="main" class="row-fluid">
+			{{> postsList}}
+			<hr/>
+			{{> writePost}}
+    </div>
+  </div>
+</template>
