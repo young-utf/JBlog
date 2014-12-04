@@ -11,4 +11,5 @@ iron:router
 sacha:spin
 ian:accounts-ui-bootstrap-3
 mizzao:bootstrap-3
+linto:fontawesome
 
