@@ -5,21 +5,10 @@ body {
 }
 
 .write-post-wrapper{
-  width: 500px;
   height: 300px;
   background: #F8F8F8;
   border-radius: 5px;
   float: left;
-}
-
-.container{
-  width: 1700px;
-  padding: 0px;
-}
-
-#main{
-  width: 1170px;
-  margin: 50px auto 0 auto;
 }
 
 .header{
@@ -67,7 +56,7 @@ body {
 
 .write-post-caption{
   width: 100%;
-  height: 100%;
+  height: calc(100% - 30px);
   padding-top: 10px;
   text-align: center;
 }
@@ -78,24 +67,143 @@ body {
   resize: none;
   padding: 5px;
   font-size: 18px;
-  width: 480px;
-  height: 250px;
+  height: 210px;
 }
 
-.inner-header{
-  padding-top: 50px;
-  width: 1170px;
-  margin: 0 auto;
+.post-button{
+  font-size: 22px;
+  height: 35px;
+  padding: 0px !important;
 }
 
-.inner-header .main-title{
-  color: white;
-  font-size: 75px;
+@media screen and (max-width: 414px) {
+  #main{
+    width: 100%;
+    margin: 5px auto 0 auto;
+  }
+
+  .inner-header{
+    padding-top:10px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .container{
+    width: 100%;
+    padding: 0px;
+  }
+
+  .header{
+    height: 60px;
+  }
+
+  .inner-header .main-title{
+    color: white;
+    font-size: 5vw;
+  }
+
+  .inner-header .main-job{
+    color: #333;
+    font-size: 11px;
+    display: none;
+  }
+
+  .write-post-textarea{
+    width: 95%;
+  }
+
+  .post-button{
+    width: 95%;
+  }
+
+  .write-post-wrapper{
+    width: 100%;
+  }
 }
 
-.inner-header .main-job{
-  color: #333;
-  font-size: 30px;
-  display: block;
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  #main{
+    width: 100%;
+    margin: 50px auto 0 auto;
+  }
+
+  .inner-header{
+    padding-top: 30px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header{
+    height: 150px;
+  }
+
+  .container{
+    width: 100%;
+    padding: 0px;
+  }
+
+  .inner-header .main-title{
+    color: white;
+    font-size: 6vw;
+  }
+
+  .inner-header .main-job{
+    color: #333;
+    font-size: 20px;
+    display: block;
+  }
+
+  .write-post-textarea{
+    width: 95%;
+  }
+
+  .post-button{
+    width: 95%;
+  }
+
+  .write-post-wrapper{
+    width: 500px;
+  }
 }
 
+@media screen and (min-width: 1025px) {
+  #main{
+    width: 1170px;
+    margin: 50px auto 0 auto;
+  }
+
+  .inner-header{
+    padding-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 1700px;
+    padding: 0px;
+  }
+
+  .inner-header .main-title{
+    color: white;
+    font-size: 470%;
+  }
+
+  .inner-header .main-job{
+    color: #333;
+    font-size: 40px;
+    display: block;
+  }
+
+  .write-post-textarea{
+    width: 480px;
+  }
+
+  .post-button{
+    width: 480px;
+  }
+
+  .write-post-wrapper{
+    width: 500px;
+  }
+}
