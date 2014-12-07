@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-collapse{
-  width: 1170px;
+  width: 100%;
   margin: 0px auto 0px auto !important;
 }
 
@@ -74,6 +74,43 @@ body {
   font-size: 22px;
   height: 35px;
   padding: 0px !important;
+}
+
+.post{
+  width: 95%;
+  height: 130px;
+  margin: 10px auto;
+  border: solid 5px #78909C;
+  border-radius: 15px;
+  padding: 5px 15px;
+  overflow-y: auto;
+  word-break: break-all;
+  background: #ECEFF1;
+}
+
+.post-writer .writer-name{
+  font-size: 18px;
+  color: #455A64;
+}
+
+.post-writer .writer-time{
+  color: #bcbcbc;
+
+}
+
+.post-content{
+  width: 95%;
+  margin: 15px auto 10px auto;
+}
+
+.post-writer i{
+  font-size: 15px;
+}
+
+.post-writer i:hover{
+  font-size: 20px;
+  color: #78909C;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 414px) {
@@ -186,7 +223,7 @@ body {
 
   .inner-header .main-title{
     color: white;
-    font-size: 470%;
+    font-size: 3.8em;
   }
 
   .inner-header .main-job{

@@ -1,7 +1,13 @@
 <template name="postItem">
   <div class="post">
+    <div class="post-writer">
+      <span class="writer-name"> - {{writer}}</span>
+      <span class="writer-time">( {{createdAt}} )</span>
+      &nbsp; <i class="fa fa-wrench"></i>
+      &nbsp; <i class="fa fa-trash-o"></i>
+    </div>
     <div class="post-content">
-      {{this.name}}
+      {{post.caption}}
     </div>
   </div>
 </template>
