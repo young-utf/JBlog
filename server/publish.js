@@ -3,7 +3,7 @@
  */
 Meteor.publish('posts', function(){
   return Posts.find({});
-})
+});
 
 Meteor.methods({
   'Post': function(caption) {

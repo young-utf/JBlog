@@ -13,7 +13,7 @@ Template.writePost.events = {
     var caption = evt.target.caption.value;
     Meteor.call('Post', caption);
     evt.target.caption.value = '';
-    console.log(Posts.find().fetch());
+    $('body').scrollTop(0);
   }
 }
 

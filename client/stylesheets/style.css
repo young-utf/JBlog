@@ -120,8 +120,8 @@ body {
   }
 
   .inner-header{
-    padding-top:10px;
-    width: 70%;
+    padding-top:15px;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -136,7 +136,7 @@ body {
 
   .inner-header .main-title{
     color: white;
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   .inner-header .main-job{
@@ -223,7 +223,7 @@ body {
 
   .inner-header .main-title{
     color: white;
-    font-size: 3.8em;
+    font-size: 4vw;
   }
 
   .inner-header .main-job{
